@@ -1,0 +1,37 @@
+﻿<html> <head>
+<title>Interfaces - Forma para la Inserción de Horarios</title>
+
+<script language="JavaScript">
+function checkForma(Objeto)
+{
+ if (Objeto.nombre.value=='')
+ {
+  alert('Escriba una Solicitud Válida !!!');
+  Objeto.nombre.focus();
+  return false;
+ }
+ return true;
+}
+</script>
+</head>
+
+<body>
+<h1>Forma para la Inserci&oacute;n de Procesos - Horarios</h1>
+
+<form action="intpro1.php" method=post onSubmit="return checkForma(this);"> 
+<!-- Id del Proceso: <input type=text name=proceso size=30>
+<P> -->
+Email del Usuario: <input type=text name=usuario size=30>
+<p>
+Hora de inicio HH:MM:SS: <input type=text name=horai size=30>
+<p>
+Hora de finalizaci&oacute;n HH:MM:SS: <input type=text name=horaf size=30>
+<p>
+Fecha AAAA-MM-DD: <input type=text name=fecha size=30>
+<p>
+<input type=submit name=intpro1 value="Almacenar >>"><br><br>
+<a href="php.html"> Volver al inicio</a>
+</form>
+
+<hr>
+</body> </html>

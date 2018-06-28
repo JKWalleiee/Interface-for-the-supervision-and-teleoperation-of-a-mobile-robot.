@@ -1,0 +1,34 @@
+﻿<html> <head>
+<title>Interfaces - Forma para la modificación de Horarios</title>
+
+<script language="JavaScript">
+function checkForma(Objeto)
+{
+ if (Objeto.nombre.value=='')
+ {
+  alert('Escriba una Solicitud Válida !!!');
+  Objeto.nombre.focus();
+  return false;
+ }
+ return true;
+}
+</script>
+</head>
+
+<body>
+<h1>Forma para la modificaci&oacute;n de Horarios- Horarios</h1>
+
+<form action="modpro1.php" method=post onSubmit="return checkForma(this);">
+
+Especifique el Email del usuario: <input type=text name=email_u size=30>
+<p>
+Hora de Inicio Nueva: <input type=text name=hora_i size=30>
+<p>
+Hora de Finalizaci&oacute;n Nueva: <input type=text name=hora_f size=30>
+<p>
+<input type=submit name=modpro1 value="Modificar>>"><br><br>
+<a href="php.html"> Volver al inicio</a>
+</form>
+
+<hr>
+</body> </html>

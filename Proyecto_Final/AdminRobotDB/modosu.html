@@ -1,0 +1,36 @@
+<html> <head>
+<title>Interfaces - Forma para la Modificacion de Datos</title>
+
+<script language="JavaScript">
+function checkForma(Objeto)
+{
+ if (Objeto.nombre.value=='')
+ {
+  alert('Escriba una Solicitud Válida !!!');
+  Objeto.nombre.focus();
+  return false;
+ }
+ return true;
+}
+</script>
+</head>
+
+<body>
+<h1>Forma para la Modificacion de Datos - Usuarios</h1>
+
+<form action="modusu1.php" method=post onSubmit="return checkForma(this);">
+Especifique el Email del usuario a modificar: <input type=text name=descripcion size=30>
+<p>
+Especifique el nombre del usuario nuevo: <input type=text name=nombre size=30>
+<P>
+Especifique el Apellido del usuario nuevo: <input type=text name=Apellido size=30>
+<p>
+Contrase&ntilde;a Nueva: <input type=text name=contraseña size=30>
+<p>
+<input type=submit name=modusu1 value="Modificar >>"><br><br>
+<a href="php.html"> Volver al inicio</a>
+
+</form>
+
+<hr>
+</body> </html>

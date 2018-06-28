@@ -1,0 +1,35 @@
+<html> <head>
+<title>Interfaces - Forma para la Inserción de Datos</title>
+
+<script language="JavaScript">
+function checkForma(Objeto)
+{
+ if (Objeto.nombre.value=='')
+ {
+  alert('Escriba una Solicitud Válida !!!');
+  Objeto.nombre.focus();
+  return false;
+ }
+ return true;
+}
+</script>
+</head>
+
+<body>
+<h1>Forma para la Inserci&oacute;n de Datos - Usuarios</h1>
+
+<form action="insert.php" method=post onSubmit="return checkForma(this);">
+Nombre del Usuario: <input type=text name=nombre size=30>
+<P>
+Email: <input type=text name=descripcion size=30>
+<p>
+Apellido del Usuario: <input type=text name=Apellido size=30>
+<p>
+Contrase&ntilde;a: <input type=text name=contraseña size=30>
+<p>
+<input type=submit name=insert value="Almacenar >>"><br><br>
+<a href="php.html"> Volver al inicio</a>
+</form>
+
+<hr>
+</body> </html>
